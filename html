@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho e o MIP: Protetores da Lavoura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">🌱 Projeto Agrinho 2026</div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">O que é MIP?</a></li>
+                <li><a href="#pilares">Os 4 Pilares</a></li>
+                <li><a href="#simulador">Simulador MIP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <h1>Manejo Integrado de Pragas (MIP)</h1>
+            <p>Aprenda com o Agrinho a proteger a lavoura em harmonia com a natureza.</p>
+            <a href="#simulador" class="btn-primary">Testar Conhecimento</a>
+        </section>
+
+        <section id="sobre" class="info-section">
+            <h2>Sustentabilidade no Campo</h2>
+            <p>O MIP não busca eliminar os insetos, mas mantê-los abaixo do nível de dano econômico, priorizando o equilíbrio ecológico e a saúde do ecossistema.</p>
+        </section>
+
+        <section id="pilares" class="cards-section">
+            <h2>Os Pilares do MIP</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>1. Monitoramento</h3>
+                    <p>Inspeção periódica da lavoura para contar pragas e inimigos naturais.</p>
+                </div>
+                <div class="card">
+                    <h3>2. Controle Biológico</h3>
+                    <p>Uso de predadores naturais (como joaninhas e vespas) para combater pragas.</p>
+                </div>
+                <div class="card">
+                    <h3>3. Controle Cultural</h3>
+                    <p>Rotação de culturas e escolha de sementes resistentes.</p>
+                </div>
+                <div class="card">
+                    <h3>4. Controle Químico</h3>
+                    <p>Utilizado apenas em último caso, de forma seletiva e consciente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="simulador" class="game-section">
+            <h2>Simulador de Decisão do Agrinho</h2>
+            <div class="game-container">
+                <p id="cenario">A lavoura de soja está com uma população moderada de lagartas, mas há muitas joaninhas na área. O que você faz?</p>
+                <div class="actions">
+                    <button class="btn-choice" onclick="jogar('quimico')">Aplicar inseticida forte</button>
+                    <button class="btn-choice" onclick="jogar('esperar')">Apenas monitorar a área</button>
+                    <button class="btn-choice" onclick="jogar('biologico')">Inserir mais inimigos naturais</button>
+                </div>
+                <p id="resultado" class="feedback-text"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Projeto Escolar Agrinho. Código aberto no GitHub.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

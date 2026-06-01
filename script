@@ -1,0 +1,29 @@
+/**
+ * Lógica do Simulador MIP - Projeto Agrinho
+ * Avalia as escolhas do usuário com base nas regras de manejo sustentável.
+ */
+
+function jogar(opcao) {
+    const feedback = document.getElementById('resultado');
+    
+    switch(opcao) {
+        case 'quimico':
+            feedback.innerHTML = "❌ Incorreto! O uso de inseticida forte agora mataria as joaninhas (inimigos naturais), desequilibrando o ambiente.";
+            feedback.style.color = "#d32f2f";
+            break;
+            
+        case 'esperar':
+            feedback.innerHTML = "👍 Boa escolha! Como há presença de joaninhas, monitorar permite que a própria natureza controle as lagartas de graça.";
+            feedback.style.color = "#2e7d32";
+            break;
+            
+        case 'biologico':
+            feedback.innerHTML = "🌟 Excelente! Você reforçou o controle biológico natural, seguindo à risca a cartilha do Agrinho.";
+            feedback.style.color = "#1565c0";
+            break;
+            
+        default:
+            feedback.innerHTML = "Escolha uma opção válida.";
+            feedback.style.color = "#333";
+    }
+}
